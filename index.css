@@ -1,0 +1,95 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.col {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.product-card img {
+  max-width: 100%;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.tab {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  font-size: 16px;
+}
+
+.add-to-cart-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .product-card {
+      width: calc(100% - 20px);
+  }
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* Your existing styles */
+
+.prev-button,
+.next-button {
+  display: inline-block;
+  margin: 5px;
+}
